@@ -28,18 +28,19 @@
     @supports not (backdrop-filter:blur(1px)){.glass,.platform{background:#333842}}
     @media(prefers-reduced-motion:reduce){.wave{animation:none;will-change:auto}.platform{transition:none}}
     @media(max-width:350px){body{padding:28px 16px}.glass{padding:22px 20px}.info{padding:18px 17px;gap:11px}.platform{padding:15px 16px;gap:12px}.eyebrow{letter-spacing:.08em;font-size:8px}}
+    .location{font-size:clamp(9px,2.55vw,12px);white-space:nowrap;letter-spacing:-.015em}.info .anchor{width:42px;height:42px;border-radius:13px;transform:rotate(-5deg)}.info .anchor svg{width:25px;height:25px}.info h2{font-size:20px;line-height:1.25}.info p{font-size:14px;line-height:1.6}.info{gap:13px}
   </style>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"><div class="wave one"></div><div class="wave two"></div><div class="wave three"></div></div>
   <main>
-    <header><div class="brand">MaximUM massage</div><div class="tagline">Территория качественного ручного массажа</div><div class="location">г. Чебоксары, ул. 50 лет Октября, д. 20А,<br>4-й этаж</div></header>
+    <header><div class="brand">MaximUM massage</div><div class="tagline">территория качественного ручного массажа</div><div class="location">г. Чебоксары, ул. 50 лет Октября, д. 20А, 4-й этаж</div></header>
     <section class="glass" aria-labelledby="thanks">
     <div class="eyebrow"><span class="anchor" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-5 3v-3a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"/><path d="M7 9h10M7 13h6"/></svg></span><span>ВАШЕ МНЕНИЕ ВАЖНО ДЛЯ МЕНЯ</span></div>
     <h1 id="thanks">Спасибо, что<br><span class="accent">выбираете меня!</span></h1>
     <p>Буду рад, если вы поделитесь впечатлениями о массаже. Ваш отзыв помогает мне <strong>становиться ещё лучше</strong>, а тем, кто ищет массажиста, — узнать больше о том, как проходят сеансы, и понять, подходит ли им мой подход.</p>
     </section>
-    <section class="glass info" aria-labelledby="review-title"><span class="anchor" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2L12 3Z"/></svg></span><div><h2 id="review-title">Поделитесь впечатлениями</h2><p>Оставьте отзыв на удобной для вас площадке — в соцсетях или сервисах ниже.</p></div></section>
+    <section class="glass info" aria-labelledby="review-title"><span class="anchor" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8l-6 3v-3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m8 11 2.5 2.5L16 8"/></svg></span><div><h2 id="review-title">Поделитесь впечатлениями</h2><p>Оставьте отзыв на удобной для вас площадке — в соцсетях или сервисах ниже.</p></div></section>
     <div class="draft" id="draft">Предпросмотр: ссылки ещё не добавлены. Кнопки пока недоступны.</div>
     <nav aria-label="Выберите площадку для отзыва" id="platforms"></nav>
     <footer>Спасибо за время, которое вы уделяете отзыву.<br>Максим · MaximUM Massage</footer>
